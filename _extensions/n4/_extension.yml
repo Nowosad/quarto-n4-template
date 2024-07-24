@@ -1,0 +1,13 @@
+title: n4 Theme
+author: Jakub Nowosad
+version: 1.2.0
+contributes:
+  formats:
+    revealjs:
+      theme: [default, n4.scss]
+      echo: true
+      highlight-style: github
+      slide-number: c/t
+      width: 1600
+      height: 900
+      transition: none

@@ -1,0 +1,57 @@
+---
+title: "TITLE"
+author: "Jakub Nowosad"
+institute: "https://jakubnowosad.com/"
+date: today
+date-format: iso
+#lang: pl-PL
+chalkboard:
+  theme: whiteboard
+title-slide-attributes:
+  data-background-image: cover.jpg
+  data-background-size: cover
+  data-background-opacity: "0.8"
+format:
+  n4-revealjs:
+    footer: "[JN](https://jakubnowosad.com/)"
+    slide-number: false
+    progress: false
+    margin: 0.05
+    menu: false
+execute:
+  echo: false
+---
+
+# Section 1
+
+## My slide
+
+:::: {.columns}
+::: {.column width="40%"}
+This is a column.
+:::
+::: {.column width="60%"}
+This is also a column, but with:
+
+- One point
+- Two point
+- Three point
+:::
+::::
+
+## My other slide
+
+::: footer
+We can even have a footer!
+:::
+
+## There is even one more
+
+```{r}
+#| code-line-numbers: "1-2|4"
+library(ggplot2)
+library(dplyr)
+df = data.frame(x = 1, y = 1)
+df$z = 3
+```
+

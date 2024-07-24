@@ -1,0 +1,142 @@
+/* https://quarto.org/docs/presentations/revealjs/themes.html*/
+
+/*-- scss:defaults --*/
+
+// fonts
+@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap);
+@import url(https://cdn.rawgit.com/tonsky/FiraCode/1.204/distr/fira_code.css);
+
+$font-family-sans-serif: "Lato", "Fira Sans", "Droid Serif", "Palatino Linotype", "Book Antiqua", Palatino,
+  FreeSerif, serif !default;
+$font-family-monospace: "Fira Code", "Lucida Console", Monaco, monospace !default;
+$presentation-heading-font: "Oswald", "Palatino Linotype", "Book Antiqua", Palatino,
+  FreeSerif, serif !default;
+$presentation-font-size-root: 34px;
+$presentation-line-height: 1.5em;
+$presentation-heading-font-weight: 400;
+
+// colors
+$body-bg: #fafafa !default;
+$body-color: #000 !default;
+$selection-bg: #26351c;
+
+/*-- scss:rules --*/
+#title-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
+  color: white !important;
+  
+  h1 {
+    align-self: flex-start;
+    text-align: center;
+    // color: rgba(255, 255, 255, 0.5); // Semi-transparent white
+    // -webkit-text-stroke: 2px black; // Black border
+    color: white !important;
+    font-size: 175px  !important; // Adjust this value to make the font larger or smaller
+    text-align: center;
+    //text-shadow: 5px 5px 0 rgba(0, 0, 0, 1); // Add black shadow
+  }
+  
+  .quarto-title-authors {
+    align-self: flex-end;
+    justify-content: flex-end;
+    
+    // color: rgba(255, 255, 255, 0.5); // Semi-transparent white
+    // -webkit-text-stroke: 2px black; // Black border
+
+    .quarto-title-author { // optional, test it for yourself
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+    }
+  }
+	
+}
+
+.reveal .footer a {
+color: #312f1a;
+}
+
+// .reveal h2 {
+// 	background-color: #23373b;
+// 	padding: 5px 0px 5px 10px;
+// 	color: #fafafa;
+// 	border-radius: 12px;
+// }
+
+// https://twitter.com/patscli/status/1582832919323693056
+.vectical-center{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+section.slide h2 {
+  color: white !important;
+  background-color: #000002 !important;
+  width: 200vw;
+  position: relative;
+  left: -20vw;
+  padding-left: 20vw;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  
+  &:empty {
+    background-color: transparent !important;
+  }
+}
+
+.quarto-figure {
+  position:relative;
+  margin-bottom:0.25em
+}
+
+hr {
+    height: 3px;
+    background-color: rgb(48, 48, 48);
+}
+
+section.slide h1 {
+  color: rgb(48, 48, 48) !important;
+  //font-size: calc(min(8vw, 8vh)) !important; // Adjust these values to change the font size
+  font-size: 300px  !important; // Adjust this value to make the font larger or smaller
+  text-align: center;
+  // text-shadow: 5px 5px 0 rgba(1, 1, 1, 1); // Add white shadow
+}
+
+.custom-title {
+  @extend h1;
+  color: white !important;
+  line-height: 1.2em !important;
+  text-align: center;
+  text-shadow: 5px 5px 0 rgba(0, 0, 0, 1); // Add black shadow
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.custom-title2 {
+  @extend h1;
+  color: white !important;
+  line-height: 1.2em !important;
+  align-self: flex-start;
+  text-align: center !important;
+  text-shadow: 5px 5px 0 rgba(0, 0, 0, 1); // Add black shadow
+  // position: relative;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+}
+
+// https://github.com/quarto-dev/quarto-cli/discussions/1386
+.v-center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
