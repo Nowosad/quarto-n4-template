@@ -1,8 +1,8 @@
 ---
-title: "TITLE"
-author: "Jakub Nowosad"
-institute: "https://jakubnowosad.com/"
-date: today
+title: "what"
+author: "Jakub Nowosad, <https://jakubnowosad.com/>"
+institute: "where"
+date: "2024-11-03"
 date-format: iso
 #lang: pl-PL
 chalkboard:
@@ -18,8 +18,13 @@ format:
     progress: false
     margin: 0.05
     menu: false
+    code-line-numbers: false
 execute:
   echo: false
+knitr: 
+  opts_chunk: 
+    out-width: 100%
+    fig-align: center
 ---
 
 # Section 1
