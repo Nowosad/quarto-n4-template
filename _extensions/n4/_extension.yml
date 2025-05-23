@@ -1,6 +1,6 @@
 title: n4 Theme
 author: Jakub Nowosad
-version: 1.3.0
+version: 1.3.1
 contributes:
   formats:
     revealjs:
