@@ -5,7 +5,7 @@
 // fonts
 @import url(https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap);
-@import url(https://cdn.rawgit.com/tonsky/FiraCode/1.204/distr/fira_code.css);
+@import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
 
 $font-family-sans-serif: "Lato", "Fira Sans", "Droid Serif", "Palatino Linotype", "Book Antiqua", Palatino,
   FreeSerif, serif !default;
@@ -35,7 +35,7 @@ $selection-bg: #26351c;
     // color: rgba(255, 255, 255, 0.5); // Semi-transparent white
     // -webkit-text-stroke: 2px black; // Black border
     color: white !important;
-    font-size: 175px  !important; // Adjust this value to make the font larger or smaller
+    font-size: clamp(56px, 10vw, 175px) !important;
     text-align: center;
     //text-shadow: 5px 5px 0 rgba(0, 0, 0, 1); // Add black shadow
   }
@@ -72,6 +72,7 @@ color: #312f1a;
 // }
 
 // https://twitter.com/patscli/status/1582832919323693056
+.vertical-center,
 .vectical-center{
   margin: 0;
   position: absolute;
@@ -92,6 +93,13 @@ section.slide h2 {
   
   &:empty {
     background-color: transparent !important;
+    padding: 0;
+  }
+
+  &:not(:empty) {
+    padding-left: 20vw;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 
@@ -108,7 +116,7 @@ hr {
 section.slide h1 {
   color: rgb(48, 48, 48) !important;
   //font-size: calc(min(8vw, 8vh)) !important; // Adjust these values to change the font size
-  font-size: 300px  !important; // Adjust this value to make the font larger or smaller
+  font-size: clamp(80px, 18vw, 300px) !important;
   text-align: center;
   // text-shadow: 5px 5px 0 rgba(1, 1, 1, 1); // Add white shadow
 }
